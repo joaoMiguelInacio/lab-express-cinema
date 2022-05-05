@@ -1,0 +1,27 @@
+<div class="details-container">
+    <div class="details-image-container">
+        <img src="{{image}}" alt="{{title}} image">
+    </div>
+    <div class="details-text-container">
+        <h3>Title:</h3>
+        <p>{{title}}</p>
+        <h4>Actors:</h4>
+        <div class="stars">
+            <p>|</p>
+            {{#each stars}}
+                <p>{{this}} | </p>
+            {{/each}}
+        </div>            
+        <h4>Director:</h4>
+        <p>{{director}}</p>
+        <h4>Description:</h4>
+        <p>{{description}}</p>
+        <h4>Showtimes:</h4>
+        <div class="showtimes">
+            <p>|</p>
+            {{#each showtimes}}
+            <p> {{this}} | </p>
+            {{/each}}
+        </div>
+    </div>
+</div>
