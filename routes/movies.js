@@ -5,7 +5,6 @@ const Movie = require("../models/models.js");
 router.get('/movies', async (request, response) => {
     try {
       const movies = await Movie.find();
-      console.log(movies)
       response.render('movies', {movies});
     } catch (err) {
       console.error(err);
